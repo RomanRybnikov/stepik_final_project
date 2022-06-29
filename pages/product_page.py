@@ -3,7 +3,6 @@ from .locators import ProductPageLocators
 
 class ProductPage(BasePage):
 
-
     def add_to_basket(self):
         assert self.is_element_present(*ProductPageLocators.BUTTON_ADD), "Button is not presented"
         button = self.browser.find_element(*ProductPageLocators.BUTTON_ADD)
